@@ -49,7 +49,7 @@ export default function AdminDashboard() {
 
     const data = new FormData();
     data.append('file', file);
-    data.append('upload_preset', 'demo'); // السمية ديال preset اللي درتي فـ Cloudinary
+    data.append('upload_preset', 'portfolio_preset'); // السمية ديال preset اللي درتي فـ Cloudinary
 
     try {
       const res = await fetch(`https://api.cloudinary.com/v1_1/vgc6j5lt/video/upload`, {
